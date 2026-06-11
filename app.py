@@ -83,3 +83,35 @@ with tab3:
     roundness = st.slider("Roundness", 0.4, 1.0, 0.8)
     shape1 = st.slider("Shape Factor 1", 0.002, 0.011, 0.006, step=0.00001, format="%.5f")
     shape2 = st.slider("Shape Factor 2", 0.0005, 0.004, 0.001, step=0.00001, format="%.5f")
+
+     st.write("---")
+
+if st.button("🔍 Predict Bean Type", use_container_width=True):
+
+    input_data = pd.DataFrame([[
+        area,
+        perimeter,
+        major_axis,
+        minor_axis,
+        aspect_ratio,
+        eccentricity,
+        convex_area,
+        extent,
+        solidity,
+        roundness,
+        shape1,
+        shape2
+    ]])
+
+    try:
+        scaled_data = scaler.transform(input_data)
+        prediction = model.predict(scaled_data)
+
+        st.success(f"🌱 Predicted Bean Variety: {prediction[0]}")
+
+    except Exception as e:
+        st.error(f"Error: {e}")
+
+
+
+
