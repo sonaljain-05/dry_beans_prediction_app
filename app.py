@@ -30,7 +30,7 @@ st.sidebar.header("📋 Bean Information")
 
 
 st.sidebar.image(
-    "http://googleusercontent.com/image_collection/image_retrieval/15481895643030445662_0", 
+    "beans.jpg", 
     caption="Fresh Green Beans Analysis", 
     use_container_width=True
 )
