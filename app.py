@@ -16,9 +16,10 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 
-scaler = joblib.load(r"E:\data science\dry_bean\scaler.pkl")
-model = joblib.load(r"E:\data science\dry_bean\best_model.pkl")
 
+
+scaler = joblib.load("scaler.pkl")
+model = joblib.load("best_model.pkl")
 
 st.title("🌱 Dry Bean Classification Dashboard")
 st.write("Click on the tabs below to adjust features and predict the variety:")
