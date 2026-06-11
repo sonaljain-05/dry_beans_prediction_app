@@ -96,7 +96,7 @@ with tab1:
 # Tab 2: Shape and Length features
 with tab2:
     # Double Highlighted Internal Header using HTML
-    st.markdown("<div style='background-color: #1565c0; padding: 10px; border-radius: 5px;'><h2 style='color: white; margin: 0; padding-left: 10px;'>🔵 SECTION 2: AXIS, SHAPE & LENGTH</h2></div>", unsafe_allow_html=True)
+    st.markdown("<div style='background-color: #bdff7a; padding: 10px; border-radius: 5px;'><h2 style='color: white; margin: 0; padding-left: 10px;'>🔵 SECTION 2: AXIS, SHAPE & LENGTH</h2></div>", unsafe_allow_html=True)
     st.write("") # Blank space
     major_axis = st.slider("Major Axis Length", 150.0, 740.0, 300.0)
     minor_axis = st.slider("Minor Axis Length", 100.0, 460.0, 250.0)
@@ -106,7 +106,7 @@ with tab2:
 # Tab 3: Technical Shape Factors
 with tab3:
     # Double Highlighted Internal Header using HTML
-    st.markdown("<div style='background-color: #e65100; padding: 10px; border-radius: 5px;'><h2 style='color: white; margin: 0; padding-left: 10px;'>🟠 SECTION 3: MICROSCOPIC SHAPE FACTORS</h2></div>", unsafe_allow_html=True)
+    st.markdown("<div style='background-color: #24733f; padding: 10px; border-radius: 5px;'><h2 style='color: white; margin: 0; padding-left: 10px;'>🟠 SECTION 3: MICROSCOPIC SHAPE FACTORS</h2></div>", unsafe_allow_html=True)
     st.write("") # Blank space
     extent = st.slider("Extent", 0.4, 0.9, 0.75)
     solidity = st.slider("Solidity", 0.9, 1.0, 0.98)
